@@ -185,7 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        shurjopayv2\ShurjopayLaravelPackage8\ShurjopayServiceProvider::class,
         /*
          * Application Service Providers...
          */
