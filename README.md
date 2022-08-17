@@ -51,20 +51,20 @@ use shurjopayv2\ShurjopayLaravelPackage8\Http\Controllers\ShurjopayController;
 
 ```
 $info = array(
-'currency' => "",
-'amount' => ,
-'order_id' => "",
-'discsount_amount' => ,
-'disc_percent' => ,
-'client_ip' => "",
-'customer_name' => "",
-'customer_phone' => "",
-'email' => "",
-'customer_address' => "",
-'customer_city' => "",
-'customer_state' => "",
-'customer_postcode' => "",
-'customer_country' => "",
+    'currency' => "",
+    'amount' => ,
+    'order_id' => "",
+    'discount_amount' => ,
+    'disc_percent' => ,
+    'client_ip' => "",
+    'customer_name' => "",
+    'customer_phone' => "",
+    'email' => "",
+    'customer_address' => "",
+    'customer_city' => "",
+    'customer_state' => "",
+    'customer_postcode' => "",
+    'customer_country' => "",
 );
 
 $shurjopay_service = new ShurjopayController();
@@ -77,6 +77,9 @@ return $shurjopay_service->checkout($info);
 $shurjopay_service = new ShurjopayController();
 return $shurjopay_service->verify($order_id);``
 ```
+
+## In live-server  we have to change the env file's merchant username, merchant password, merchant prefix, and engine URL according to provided by shurjopay.
+
 
 ## Postman Documentations
 
